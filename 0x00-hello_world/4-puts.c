@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 /*
+ * main - Program start
  * Testing some main functions
  */
 int main(void)
