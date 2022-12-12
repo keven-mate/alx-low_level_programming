@@ -1,21 +1,24 @@
-#include <stdio.h>
- /**
-  * main - Entry-point
-  *
-  * Return: 0 always
-  */
+#include<stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: print 0, 1, - 9
+ *
+ * Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-	int c;
+	int i;
 
-	for (c = 48; c <= 57; c++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(c);
-		if (c != 57)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		putchar((char)i + '0');
+		if (i == 9)
+			continue;
+		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
