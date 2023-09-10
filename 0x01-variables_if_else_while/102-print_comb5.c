@@ -9,28 +9,31 @@
  */
 int main(void)
 {
-	int c = 0;
-	int f_d;
-	int l_d;
+	int i, j;
 
-	while (c <= 99)
+	i = 0;
+	while (i <= 98)
 	{
-		f_d = (c / 10 + '0');
-		l_d = (c % 10 + '0');
-
-		if (f_d < l_d)
+		j = i + 1;
+		while (j <= 99)
 		{
-			putchar(f_d);
-			putchar(l_d);
-
-			if (c != 89)
+			if (i < j)
 			{
-				putchar(',');
+				putchar(i / 10 + '0');
+				putchar(i % 10 + '0');
 				putchar(' ');
+				putchar(j / 10 + '0');
+				putchar(j % 10 + '0');
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+			++j;
 		}
-		c++;
+		i++;
 	}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
