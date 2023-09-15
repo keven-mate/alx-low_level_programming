@@ -3,6 +3,7 @@
 /**
  * print_triangle - unction that prints a
  * triangle, followed by a new line
+ * @size: Size of triangle
  *
  * Return: Always (0)
  */
